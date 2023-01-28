@@ -1,194 +1,98 @@
-<!DOCTYPE html>
-
-<html lang="zh-CN">
-
+<!DOCTYPE HTML>
+<html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  <meta name="referrer" content="unsafe-url">
   
-  <title>买房流水账 - 陈日红·全栈工程师</title>
-  <meta charset="UTF-8">
+  <title>买房流水账</title>
+  <meta name="author" content="陈日红">
   <meta name="description" content="不止是专业">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   
   
+  <meta property="og:title" content="买房流水账"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="陈日红·全栈工程师"/>
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="陈日红·全栈工程师" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <meta name="description" content="自去年底以来，一直在链接app上看房子。看的二手房，图的是不用装修和不用等。家底太薄没办法，超过140万的，我们都不看。 时间来到2021年夏天，大概看了4，5套吧。价格都在129万到145万。有一些120万的，因为房子太老了，没要。 尽量想找一个价格便宜120万左右，房龄在20年以内的，小区环境还过得去的。  合适房子  终于，在9月初，看了一套122万，面积在74平方，小区还行的。 基本上符合">
-<meta property="og:type" content="article">
-<meta property="og:title" content="买房流水账">
-<meta property="og:url" content="https://blog.chenrh.com/2021/09/%E4%B9%B0%E6%88%BF%E6%B5%81%E6%B0%B4%E8%B4%A6/index.html">
-<meta property="og:site_name" content="陈日红·全栈工程师">
-<meta property="og:description" content="自去年底以来，一直在链接app上看房子。看的二手房，图的是不用装修和不用等。家底太薄没办法，超过140万的，我们都不看。 时间来到2021年夏天，大概看了4，5套吧。价格都在129万到145万。有一些120万的，因为房子太老了，没要。 尽量想找一个价格便宜120万左右，房龄在20年以内的，小区环境还过得去的。  合适房子  终于，在9月初，看了一套122万，面积在74平方，小区还行的。 基本上符合">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-09-27T00:47:41.000Z">
-<meta property="article:modified_time" content="2021-09-27T01:18:17.517Z">
-<meta property="article:author" content="陈日红">
-<meta property="article:tag" content="生活">
-<meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=1632881575892">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+  <a href="/" class="back black-color">
+    <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M2 30 L30 2 M30 30 L2 2"></path>
+    </svg>
+  </a>
   
-  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1632881575892">
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/chenrihong/chenrihong.github.io@latest/images/theme/background.jpeg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="陈日红" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/chenrihong/chenrihong.github.io@latest/images/theme/avatar.jpeg" alt="陈日红"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="陈日红">
-            <img src="https://cdn.jsdelivr.net/gh/chenrihong/chenrihong.github.io@latest/images/theme/avatar.jpeg" alt="陈日红" alt="陈日红">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>文章</span>4</div>
-        <div><span>标签</span>3</div>
-        <div><span>分类</span>4</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="博客首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                博客首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives.html" title="文章归档">
-            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
-            <div class="mdui-list-item-content">
-                文章归档
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-         
-            <form id="search_form" action_e="https://cn.bing.com/search?q=site:blog.chenrh.com" onsubmit="return search();">
-                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
-            </form>
-         
-    </div>
-</div>
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章分类</h3>
-    <div class="nexmoe-widget">
-
-      <ul class="category-list">
-
-        
-
-
-        
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/思考/">思考</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/感悟/">感悟</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/新闻/">新闻</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/生活/">生活</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-      </ul>
-
-    </div>
-  </div>
-
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 10px;">思考</a> <a href="/tags/%E6%97%A5%E5%BF%97/" style="font-size: 10px;">日志</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 10px;">生活</a>
+    <div class="description">
+      &nbsp;专注医疗软件应用开发·全栈工程师
     </div>
     
-  </div>
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章归档</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">4</span></li></ul>
-    </div>
-  </div>
-
-
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2021 陈日红
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-        
-    </div>
-</div><!-- .nexmoe-drawer -->
-  </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-
-  <article>
-    
-        <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
-            <img data-src="https://cdn.jsdelivr.net/gh/chenrihong/chenrihong.github.io@latest/images/theme/background.jpeg" data-sizes="auto" alt="买房流水账" class="lazyload">
-            <h1>买房流水账</h1>
-        </div>
-    
-    
-    <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年09月27日</a>
-    <a><i class="nexmoefont icon-areachart"></i>598 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
-    
 
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        买房流水账
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      <time datetime="2021-09-27T00:47:41.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2021-09-27
+</time>
+
+
+    
+    &nbsp;
+    <svg class="i-tag" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="24" cy="8" r="2"></circle>
+      <path d="M2 18 L18 2 30 2 30 14 14 30 Z"></path>
+    </svg>
+    &nbsp;
+    <a href="/categories/生活/">生活</a>
+
+
+
+
+    
+    &nbsp;
+    <svg class="i-tag" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="24" cy="8" r="2"></circle>
+      <path d="M2 18 L18 2 30 2 30 14 14 30 Z"></path>
+    </svg>
+    &nbsp;
+    <a href="/tags/生活/">生活</a>
+
+
+    </div>
+    <hr>
+    
+      
+    
+    <div class="picture-container">
+      
+    </div>
     <p>自去年底以来，一直在链接app上看房子。看的二手房，图的是不用装修和不用等。家底太薄没办法，超过140万的，我们都不看。</p>
 <p>时间来到2021年夏天，大概看了4，5套吧。价格都在129万到145万。有一些120万的，因为房子太老了，没要。</p>
 <p>尽量想找一个价格便宜120万左右，房龄在20年以内的，小区环境还过得去的。</p>
@@ -223,79 +127,97 @@
 <p>在明天，也就是9月28日，去办理过户手续，这时候还要1.17万契税。</p>
 <p>买房流水账先记到这里吧，有新进展再来添一笔。</p>
 
+
   </article>
-
-  
-    
-  <div class="nexmoe-post-copyright">
-    <strong>本文作者：</strong>陈日红<br>
-    <strong>本文链接：</strong><a href="https://blog.chenrh.com/2021/09/%E4%B9%B0%E6%88%BF%E6%B5%81%E6%B0%B4%E8%B4%A6/" title="https:&#x2F;&#x2F;blog.chenrh.com&#x2F;2021&#x2F;09&#x2F;%E4%B9%B0%E6%88%BF%E6%B5%81%E6%B0%B4%E8%B4%A6&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;blog.chenrh.com&#x2F;2021&#x2F;09&#x2F;%E4%B9%B0%E6%88%BF%E6%B5%81%E6%B0%B4%E8%B4%A6&#x2F;</a><br>
-    
-      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-    
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
   </div>
 
 
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow">
     
-        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-    
-    
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a>
-    
-</div>
 
-  <div class="nexmoe-post-footer">
-    
-  </div>
-</div>
-        <div class="nexmoe-post-right">
-          <div class="nexmoe-fixed">
-            <div class="nexmoe-tool"> 
-              
-                
-              
-              <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
-            </div>
-          </div>
-        </div>
+
+
+
+
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot">
+    <div class="firstrow">
+        <a href="#top" target="_self">
+        <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M10 30 L26 16 10 2 Z"></path>
+        </svg>
+        </a>
+        
+    </div>
+    <div class="secondrow">
+        <a href="">
+        
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script type="text/javascript">
 
- 
+// disqus scripts
 
-<script async src="/js/app.js?v=1632881575893"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
-<script>
-	$(".justified-gallery").justifiedGallery({
-		rowHeight: 160,
-		margins: 10,
-	});
+        // dropdown scripts
+        function $(s) {
+            return document.querySelector(s)
+        }
+
+    function $$(s) {
+        return document.querySelectorAll(s)
+    }
+    var dropDownElArr = $$('.dropdown')
+    for (var i = 0; i < dropDownElArr.length; i += 1) {
+        dropDownElArr[i].addEventListener('click', function (event) {
+            var content = this.querySelector('.dropdown-content')
+            event.stopPropagation()
+            if (content.className.indexOf('open') < 0) {
+                content.classList.add('open')
+            } else {
+                content.classList.remove('open')
+            }
+        })
+    }
+    document.body.addEventListener('click', function () {
+        var dropDownContentElArr = $$('.dropdown-content')
+        for (var i = 0; i < dropDownContentElArr.length; i += 1) {
+            dropDownContentElArr[i].classList.remove('open')
+        }
+    })
+
+    // smooth scroll
+    $$('a[href^="#"]').forEach(e => {
+        e.addEventListener("click", function (e) {
+            e.preventDefault();
+            var t = this.getAttribute("href").substr(1);
+            $(`[id='${decodeURIComponent(t)}']`).scrollIntoView({
+                behavior: "smooth"
+            }),
+                t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`)
+        })
+    })
+
+    // search
+    var searchEl = document.querySelector("#local-search-input")
+    if (searchEl) searchEl.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            var s = e.target.value
+            window.open('//cn.bing.com/search?q=site:https://blog.chenrh.com%20' + s, '_blank').focus()
+        }
+    })
+
 </script>
-
-
-  
-
-
-
-
-
-    <!-- baidu Analytics -->
-<script>
-    var _hmt = _hmt || [];
-    (function() {var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?27f5b26157d99311d45dfb966499f697';
-    var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
 </body>
-
 </html>
