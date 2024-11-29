@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: 今早泉思如涌
-authors: [陈日红]
+authors: [chenrihong]
 tags: [思考]
 ---
 
