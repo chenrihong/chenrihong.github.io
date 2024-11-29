@@ -1,4 +1,4 @@
-name: Argos CI Screenshots
+name: Docusaurus Deploy
 
 on:
   push:
@@ -26,6 +26,10 @@ jobs:
 
     - name: Build the website
       run: yarn docusaurus build
+
+    - name: Create CNAME File
+      run: |
+        echo "docs.atot.tech" > build/CNAME
 
     - name: Deploy 🚀
       uses: peaceiris/actions-gh-pages@v4
