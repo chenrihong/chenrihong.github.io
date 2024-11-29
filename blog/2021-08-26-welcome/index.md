@@ -1,29 +1,53 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: 今早泉思如涌
+authors: [陈日红]
+tags: [思考]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+# 思考
 
-Here are a few tips you might find useful.
+## 如何构建一个简单高效的低代码系统
 
-<!-- truncate -->
+要明白一点，低代码只能解决一些常见界面。而不是所有界面。而增删改查是常见的。我想要的低代码系统就是这一个能快速搭建增删改查的系统。暂时不和工作流绑定。
 
-Simply add Markdown files (or folders) to the `blog` directory.
+## 增删改查低代码系统组成的主要要素
 
-Regular blog authors can be added to `authors.yml`.
+### 表格
 
-The blog post date can be extracted from filenames, such as:
+表格是查询数据的载体，常见的表格元素配置有：
+1. 表格数据接口
+2. 表格列头配置
+3. 表格操作按钮
+4. 表格的分页器
+5. 表格查询条件
+6. 表格的行操作
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
+### 按钮
 
-A blog post folder can be convenient to co-locate blog post images:
+按钮是界面交互中最常见元素，主要有
 
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+1. 表格中的查询按钮
+2. 表格中的新增按钮
+3. 表格中行操作中编辑按钮
+4. 表格中行操作的删除按钮
+5. 表格行操作中其他功能的按钮
 
-The blog supports tags as well!
+### 表单
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+表单是系统收集数据的常用元素，需要实现的配置功能有
+
+1. 表单的列
+2. 表单的排列方式，先实现按分栏排列
+3. 表单的必填项，数据校验项（支持正则）
+4. 表单的中的组件若干
+5. 表单的通用保存按钮
+
+### 进阶组件配置
+
+1. 表格条件间的级联，例如省市组联
+2. 表单间字段中互相级联
+3. 表单中的流水编号生成规则
+4. 表单父级字段选择
+
+初步实现一个低代码系统，实现简单的增删改查。
