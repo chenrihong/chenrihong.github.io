@@ -3,10 +3,10 @@ facebook:
   permalink: /facebook
   description: Facebook tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+思考:
+  label: 思考
+  permalink: /think
+  description: 记录自己的一些思考感悟
 
 docusaurus:
   label: Docusaurus

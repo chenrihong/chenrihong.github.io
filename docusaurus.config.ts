@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'HRP3.0',
-  tagline: '内部文档，请勿泄漏',
+  tagline: '欢迎参与维护',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -27,8 +27,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh'],
   },
 
   presets: [
@@ -37,11 +37,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/'
-          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // https://gitee.com/chenrh/thoth-docs/blob/main/thoth-docs/docs/intro.md
         },
         blog: {
           showReadingTime: true,
@@ -49,11 +45,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
-          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -71,7 +63,7 @@ const config: Config = {
     navbar: {
       title: '',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'THOTHINFO',
         src: 'img/logo-of-thothtop.png',
       },
       items: [
@@ -81,10 +73,10 @@ const config: Config = {
           position: 'left',
           label: '低代码文档',
         },
-        { to: '/blog', label: '低代码配置文档', position: 'left' },
+        { to: '/blog', label: '我的博文', position: 'left' },
         {
-          href: 'https://gitee.com/chenrh/thoth-docs',
-          label: 'Gitee',
+          href: 'https://github.com/chenrihong/chenrihong.github.io',
+          label: 'GitHub',
           position: 'right',
         },
       ],
@@ -124,15 +116,11 @@ const config: Config = {
             {
               label: 'Blog',
               to: '/blog',
-            },
-            {
-              label: 'Gitee',
-              href: 'https://gitee.com/chenrh/thoth-docs',
-            },
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 杭州图特信息科技有限公司`,
+      copyright: `Copyright © ${new Date().getFullYear()} ChenRihong. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
