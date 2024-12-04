@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkthoth_docs=self.webpackChunkthoth_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u4eca\u65e9\u6cc9\u601d\u5982\u6d8c","permalink":"/blog/welcome","unlisted":false,"date":"2024-11-30T00:00:00.000Z"}]}')}}]);
