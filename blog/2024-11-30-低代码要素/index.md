@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: 今早泉思如涌
+title: 低代码要素
 authors: [chenrihong]
 tags: [思考]
 ---

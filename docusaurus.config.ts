@@ -71,9 +71,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '我的文档',
+          label: '文档',
         },
-        { to: '/blog', label: '我的博文', position: 'left' },
+        { to: '/blog', label: '文章', position: 'left' },
         {
           href: 'https://github.com/chenrihong/chenrihong.github.io',
           label: 'GitHub',
@@ -85,42 +85,34 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '文档',
           items: [
             {
-              label: 'Tutorial',
+              label: 'HRP3.0',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '交流',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: '留言',
+              href: 'https://github.com/chenrihong/chenrihong.github.io/issues',
             },
           ],
         },
         {
-          title: 'More',
+          title: '其他',
           items: [
             {
-              label: 'Blog',
+              label: '博文',
               to: '/blog',
             }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ChenRihong. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
