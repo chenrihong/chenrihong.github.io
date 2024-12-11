@@ -1,0 +1,8 @@
+{
+    "label": "移动端",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "移动端配置企业微信应用或者钉钉微应用"
+    }
+}
