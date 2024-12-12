@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type {Options as DocsOptions} from '@docusaurus/plugin-content-docs';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -69,10 +70,27 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docSidebar',
           position: 'left',
-          label: '文档',
+          label: '低代码文档',
         },
+        {
+            to: '/community/intro',
+            label: 'Community',
+            position: 'left',
+            activeBaseRegex: `/community/`,
+        },
+        // {
+        //   type: 'dropdown',
+        //   label: '业务文档',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: '流程',
+        //       to: '/docs/flow/intro',
+        //     },
+        //   ],
+        // },
         { to: '/blog', label: '文章', position: 'left' },
         {
           href: 'https://github.com/chenrihong/chenrihong.github.io',
@@ -90,7 +108,7 @@ const config: Config = {
             {
               label: 'HRP3.0',
               to: '/docs/intro',
-            },
+            }
           ],
         },
         {
@@ -119,6 +137,22 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+        'content-docs',
+        {
+          id: 'community',
+          path: 'community',
+          routeBasePath: 'community',
+          editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+          editCurrentVersion: true,
+          sidebarPath: './sidebarsCommunity.ts',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        } satisfies DocsOptions,
+      ],
+  ]
 };
 
 export default config;
