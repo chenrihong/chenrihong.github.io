@@ -1,7 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import type {Options as DocsOptions} from '@docusaurus/plugin-content-docs';
+import type { Options as DocsOptions } from '@docusaurus/plugin-content-docs';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -75,10 +75,16 @@ const config: Config = {
           label: '低代码文档',
         },
         {
-            to: '/community/intro',
-            label: 'Community',
-            position: 'left',
-            activeBaseRegex: `/community/`,
+          to: '/flow/intro',
+          label: '业务流程文档',
+          position: 'left',
+          activeBaseRegex: `/flow/`,
+        },
+        {
+          to: '/lowcode-design/intro',
+          label: '低代码设计',
+          position: 'left',
+          activeBaseRegex: `/lowcode-design/`,
         },
         // {
         //   type: 'dropdown',
@@ -140,18 +146,31 @@ const config: Config = {
 
   plugins: [
     [
-        'content-docs',
-        {
-          id: 'community',
-          path: 'community',
-          routeBasePath: 'community',
-          editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
-          editCurrentVersion: true,
-          sidebarPath: './sidebarsCommunity.ts',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        } satisfies DocsOptions,
-      ],
+      'content-docs',
+      {
+        id: 'flow',
+        path: 'flow',
+        routeBasePath: 'flow',
+        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+        editCurrentVersion: false,
+        sidebarPath: './sidebarsCommunity.ts',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'lowcodeDesign',
+        path: 'lowcode-design',
+        routeBasePath: 'lowcode-design',
+        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+        editCurrentVersion: false,
+        sidebarPath: './sidebarsLowcodeDesign.ts',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      } satisfies DocsOptions,
+    ],
   ]
 };
 
