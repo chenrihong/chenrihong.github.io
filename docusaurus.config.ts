@@ -86,6 +86,12 @@ const config: Config = {
           position: 'left',
           activeBaseRegex: `/lowcode-design/`,
         },
+        {
+          to: '/dbdesign/intro',
+          label: '数据库设计',
+          position: 'left',
+          activeBaseRegex: `/dbdesign/`,
+        },
         // {
         //   type: 'dropdown',
         //   label: '业务文档',
@@ -164,6 +170,19 @@ const config: Config = {
         id: 'lowcodeDesign',
         path: 'lowcode-design',
         routeBasePath: 'lowcode-design',
+        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+        editCurrentVersion: false,
+        sidebarPath: './sidebarsLowcodeDesign.ts',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'dbDesign',
+        path: 'dbdesign',
+        routeBasePath: 'dbdesign',
         editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
         editCurrentVersion: false,
         sidebarPath: './sidebarsLowcodeDesign.ts',
