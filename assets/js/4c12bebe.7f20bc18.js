@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkthoth_docs=self.webpackChunkthoth_docs||[]).push([[9485],{5770:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"dbDesign"}')}}]);
