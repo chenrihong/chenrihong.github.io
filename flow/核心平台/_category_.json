@@ -1,0 +1,8 @@
+{
+    "label": "核心平台",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "核心平台的需求文档"
+    }
+}

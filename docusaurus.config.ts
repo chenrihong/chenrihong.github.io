@@ -72,11 +72,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docSidebar',
           position: 'left',
-          label: '低代码文档',
+          label: '配置文档',
         },
         {
           to: '/flow/intro',
-          label: '业务流程文档',
+          label: '需求(流程)文档',
           position: 'left',
           activeBaseRegex: `/flow/`,
         },
