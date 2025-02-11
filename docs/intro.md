@@ -15,6 +15,8 @@ sidebar_position: 1
 
 1. 点击文档下方的“ Edit This Page ” 链接
 2. Fork 文档仓库
-3. 提交 PR
+3. 修改文档
+4. 提交 PR
+5. 等待审核
 
 等文档审核通过后，文档会自动更新。
