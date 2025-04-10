@@ -1,8 +1,4 @@
----
-sidebar_position: 1
----
-
-# window.http
+# http 函数
 
 
 :::tip[我需要调用后端一个定制接口怎么办呢？]
