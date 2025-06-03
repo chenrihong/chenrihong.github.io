@@ -22,10 +22,10 @@ jobs:
         node-version: current
 
     - name: Install dependencies
-      run: npm run install
+      run: yarn install
 
     - name: Build the website
-      run: npm run docusaurus build
+      run: yarn docusaurus build
 
     - name: Create CNAME File
       run: |
