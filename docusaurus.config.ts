@@ -71,7 +71,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docSidebar',
           position: 'left',
-          label: '配置文档',
+          label: '低代码使用文档',
         },
         {
           to: '/flow/intro',
@@ -84,6 +84,12 @@ const config: Config = {
           label: '低代码设计',
           position: 'left',
           activeBaseRegex: `/lowcode-design/`,
+        },
+        {
+          to: '/docs-frontend/intro',
+          label: '前端文档',
+          position: 'left',
+          activeBaseRegex: `/docs-frontend/`,
         },
         {
           to: '/dbdesign/intro',
@@ -214,6 +220,19 @@ const config: Config = {
         id: 'dbDesign',
         path: 'dbdesign',
         routeBasePath: 'dbdesign',
+        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+        editCurrentVersion: false,
+        sidebarPath: './sidebarsLowcodeDesign.ts',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'docsFrontend',
+        path: 'docs-frontend',
+        routeBasePath: 'docs-frontend',
         editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
         editCurrentVersion: false,
         sidebarPath: './sidebarsLowcodeDesign.ts',
