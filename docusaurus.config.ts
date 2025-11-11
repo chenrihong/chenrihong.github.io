@@ -74,6 +74,12 @@ const config: Config = {
           label: '低代码使用文档',
         },
         {
+          to: '/func/intro',
+          label: '函数文档',
+          position: 'left',
+          activeBaseRegex: `/func/`,
+        },
+        {
           to: '/flow/intro',
           label: '需求(流程)文档',
           position: 'left',
@@ -90,12 +96,6 @@ const config: Config = {
           label: '前端文档',
           position: 'left',
           activeBaseRegex: `/docs-frontend/`,
-        },
-        {
-          to: '/dbdesign/intro',
-          label: '数据库设计',
-          position: 'left',
-          activeBaseRegex: `/dbdesign/`,
         },
         // {
         //   type: 'dropdown',
@@ -191,6 +191,19 @@ const config: Config = {
     [
       'content-docs',
       {
+        id: 'func',
+        path: 'func',
+        routeBasePath: 'func',
+        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
+        editCurrentVersion: false,
+        sidebarPath: './sidebarsCommunity.ts',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
         id: 'flow',
         path: 'flow',
         routeBasePath: 'flow',
@@ -207,19 +220,6 @@ const config: Config = {
         id: 'lowcodeDesign',
         path: 'lowcode-design',
         routeBasePath: 'lowcode-design',
-        editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
-        editCurrentVersion: false,
-        sidebarPath: './sidebarsLowcodeDesign.ts',
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-      } satisfies DocsOptions,
-    ],
-    [
-      'content-docs',
-      {
-        id: 'dbDesign',
-        path: 'dbdesign',
-        routeBasePath: 'dbdesign',
         editUrl: 'https://github.com/chenrihong/chenrihong.github.io/tree/main/',
         editCurrentVersion: false,
         sidebarPath: './sidebarsLowcodeDesign.ts',
