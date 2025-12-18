@@ -1,6 +1,6 @@
 {
-    "label": "上传函数",
-    "position": 6,
+    "label": "03.上传下载函数",
+    "position": 3,
     "link": {
         "type": "generated-index",
         "description": "按钮脚本"
